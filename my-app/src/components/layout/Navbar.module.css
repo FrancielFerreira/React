@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-right: 1em;
+}
+
+.item a {
+  text-decoration: none;
+  background: #ddd;
+  color: currentColor;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.item a:hover {
+  background: #ccc;
+}
