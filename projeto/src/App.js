@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Company from "./components/pages/Company";
-import Projects from "./components/pages/Projects"
+import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import NewProject from "./components/pages/NewProject";
 
@@ -12,25 +12,21 @@ import Footer from "./components/layout/Footer";
 function App() {
   return (
     <div className="App">
-
       <Router>
-
         <Navbar />
-
+        
         <Container customClass="min-height">
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/company" element={<Company />}></Route>
-            <Route path="/projects" element={<Projects />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/newproject" element={<NewProject />}></Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/newproject" element={<NewProject />} />
           </Routes>
         </Container>
 
         <Footer />
-
       </Router>
-
     </div>
   );
 }
